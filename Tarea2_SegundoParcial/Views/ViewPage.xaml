@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tarea2_SegundoParcial.Views.ViewPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Informacion"
+                   HorizontalOptions="Center"
+                   Margin="0 ,20 ,0 ,0"
+                   FontSize="30"/>
+            <StackLayout Orientation="Vertical"
+                         VerticalOptions="Center"
+                         Margin="20">
+                <Label Text="ID: "
+                       Margin="0, 20, 0, 0"
+                       FontSize="20"/>
+                <Label Text=""
+                   x:Name="lblId"
+                   Margin="0, 20, 0, 0"
+                   FontSize="20"/>
+            </StackLayout>
+            <StackLayout Orientation="Vertical"
+                         VerticalOptions="Center"
+                         Margin="20">
+                <Label Text="Title: "
+                       Margin="0, 20, 0, 0"
+                       FontSize="20"/>
+                <Label Text=""
+                   x:Name="lblTitle"
+                   Margin="0, 20, 0, 0"
+                   FontSize="20"/>
+            </StackLayout>
+            <StackLayout Orientation="Vertical"
+                         VerticalOptions="Center"
+                         Margin="20">
+                <Label Text="Body: "
+                       Margin="0, 20, 0, 0"
+                       FontSize="20"/>
+                <Label Text=""
+                   x:Name="lblBody"
+                   Margin="0, 20, 0, 0"
+                   FontSize="20"
+                       />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
