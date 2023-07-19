@@ -10,17 +10,31 @@
                    FontSize="20"
                    HorizontalTextAlignment="Center"
                    VerticalTextAlignment="Center"
-                   HorizontalOptions="End"
+                   HorizontalOptions="CenterAndExpand"
                    TextColor="Black"
-                   Margin="0,0,20,0"
+                   Margin="20"
                    HeightRequest="60"
                    WidthRequest="200"
                    BackgroundColor="White"/>
+
+            <Entry x:Name="searchEntry"
+                   Placeholder="Ingrese un término de búsqueda"
+                   Margin="20"
+                   HeightRequest="40"
+                   FontSize="16"
+                   HorizontalOptions="FillAndExpand"/>
+
             <Button x:Name="btnSearch"
                     Text="Buscar"
                     Margin="20"
-                    HeightRequest="70"
+                    HeightRequest="50"
+                    BackgroundColor="#007AFF"
+                    TextColor="White"
+                    FontSize="16"
+                    FontAttributes="Bold"
+                    CornerRadius="25"
                     Clicked="btnSearch_Clicked"/>
+
             <ListView x:Name="list" 
                       ItemsSource="{Binding valores}"
                       HasUnevenRows="True"
@@ -30,12 +44,18 @@
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <StackLayout>
+                            <StackLayout Padding="10" BackgroundColor="#FFFFFF">
                                 <Label Text="{Binding id}"
-                                       Margin="10"
-                                       x:Name="lblId"/>
+                                       Margin="0, 5"
+                                       FontSize="16"
+                                       TextColor="#333333"/>
                                 <Label Text="{Binding title}"
-                                       Margin="10"/>
+                                       Margin="0, 5"
+                                       FontSize="14"
+                                       TextColor="#666666"/>
+                                <BoxView HeightRequest="1"
+                                         BackgroundColor="#CCCCCC"
+                                         Margin="0, 5"/>
                             </StackLayout>
                         </ViewCell>
                     </DataTemplate>

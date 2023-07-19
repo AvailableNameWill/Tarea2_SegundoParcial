@@ -3,22 +3,55 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Tarea2_SegundoParcial.Views.MainPage">
     <ContentPage.Content>
-        <StackLayout>
+        <Grid BackgroundColor="#F2F2F2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
             <Label Text="Tarea 2_2"
                    HorizontalOptions="Center"
                    FontSize="20"
                    FontAttributes="Bold"
-                   Margin="0, 20 ,0, 0"/>
-            <Button Text="Cargar Todos"
-                    x:Name="btnAll"
-                    HorizontalOptions="Center"
-                    Margin="0, 20 ,0, 0"
-                    Clicked="btnAll_Clicked"/>
-            <Button Text="Cargar Uno"
-                    x:Name="btnOne"
-                    HorizontalOptions="Center"
-                    Margin="0, 20 ,0, 0"
-                    Clicked="btnOne_Clicked"/>
-        </StackLayout>
+                   Margin="0, 20 ,0, 0"
+                   TextColor="#333333"/>
+
+            <StackLayout Grid.Row="1"
+                         VerticalOptions="Center"
+                         HorizontalOptions="Center">
+
+                <Button Text="Cargar Todos"
+                        x:Name="btnAll"
+                        HorizontalOptions="Center"
+                        Margin="0, 20 ,0, 0"
+                        Clicked="btnAll_Clicked"
+                        BackgroundColor="#007AFF"
+                        TextColor="#FFFFFF"
+                        WidthRequest="150"
+                        HeightRequest="50"
+                        BorderColor="#007AFF"
+                        BorderWidth="1"
+                        CornerRadius="25"
+                        FontSize="16"
+                        FontAttributes="Bold"/>
+
+                <Button Text="Cargar Uno"
+                        x:Name="btnOne"
+                        HorizontalOptions="Center"
+                        Margin="0, 20 ,0, 0"
+                        Clicked="btnOne_Clicked"
+                        BackgroundColor="#007AFF"
+                        TextColor="#FFFFFF"
+                        WidthRequest="150"
+                        HeightRequest="50"
+                        BorderColor="#007AFF"
+                        BorderWidth="1"
+                        CornerRadius="25"
+                        FontSize="16"
+                        FontAttributes="Bold"/>
+            </StackLayout>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

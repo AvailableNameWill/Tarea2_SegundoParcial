@@ -7,40 +7,54 @@
             <Label Text="Informacion"
                    HorizontalOptions="Center"
                    Margin="0 ,20 ,0 ,0"
-                   FontSize="30"/>
+                   FontSize="30"
+                   TextColor="#333333"/>
+
             <StackLayout Orientation="Vertical"
                          VerticalOptions="Center"
                          Margin="20">
                 <Label Text="ID: "
                        Margin="0, 20, 0, 0"
-                       FontSize="20"/>
+                       FontSize="20"
+                       TextColor="#666666"/>
+
                 <Label Text=""
-                   x:Name="lblId"
-                   Margin="0, 20, 0, 0"
-                   FontSize="20"/>
+                       x:Name="lblId"
+                       Margin="0, 5, 0, 0"
+                       FontSize="20"
+                       TextColor="#333333"
+                       FontAttributes="Bold"/>
             </StackLayout>
+
             <StackLayout Orientation="Vertical"
                          VerticalOptions="Center"
                          Margin="20">
                 <Label Text="Title: "
                        Margin="0, 20, 0, 0"
-                       FontSize="20"/>
+                       FontSize="20"
+                       TextColor="#666666"/>
+
                 <Label Text=""
-                   x:Name="lblTitle"
-                   Margin="0, 20, 0, 0"
-                   FontSize="20"/>
+                       x:Name="lblTitle"
+                       Margin="0, 5, 0, 0"
+                       FontSize="20"
+                       TextColor="#333333"
+                       FontAttributes="Bold"/>
             </StackLayout>
+
             <StackLayout Orientation="Vertical"
                          VerticalOptions="Center"
                          Margin="20">
                 <Label Text="Body: "
                        Margin="0, 20, 0, 0"
-                       FontSize="20"/>
+                       FontSize="20"
+                       TextColor="#666666"/>
+
                 <Label Text=""
-                   x:Name="lblBody"
-                   Margin="0, 20, 0, 0"
-                   FontSize="20"
-                       />
+                       x:Name="lblBody"
+                       Margin="0, 5, 0, 0"
+                       FontSize="20"
+                       TextColor="#333333"/>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>
